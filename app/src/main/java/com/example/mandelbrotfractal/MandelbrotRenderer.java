@@ -66,7 +66,7 @@ public class MandelbrotRenderer implements GLSurfaceView.Renderer {
                     "        gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);" +
                     "    } else {" +
                     "        float t = iter / max_iter;" +
-                    "        t = pow(t, 0.5);" +
+                    "        t = pow(t, 0.7);" + // Adjust the halo intensity
                     "        vec3 color = iceColor(t);" +
                     "        gl_FragColor = vec4(color, 1.0);" +
                     "    }" +
